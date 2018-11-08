@@ -11,14 +11,17 @@ public class HangMan {
         numberoftries = 6;
         numberofwords = 3;
         Scanner keyboard;
+        String guessedletter;
+        keyboard = new Scanner(System.in);
+        boolean right;
+        right = false;
 
 
 
         System.out.println("This is a Hang man game");
+        System.out.println("Guess a letter I will tell you if it is wrong.");
+        guessedletter = keyboard.nextLine();
 
-        for (int i =0; i < 7; i++){
-            displayHangman(i);
-        }
 
 
 
@@ -27,6 +30,9 @@ public class HangMan {
 
     }
     public static int display (Scanner keyboard){
+        for (int i =0; i < 7; i++){
+            displayHangman(i);
+        }
         switch (keyboard.nextInt()){
             case 1:
                 return 1;
