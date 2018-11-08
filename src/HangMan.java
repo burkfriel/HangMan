@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class HangMan {
 
     public static void main(String[] largs) {
@@ -8,12 +10,13 @@ public class HangMan {
         int numberoftries;
         numberoftries = 6;
         numberofwords = 3;
+        Scanner keyboard;
 
 
 
         System.out.println("This is a Hang man game");
 
-        for (int i =0; 1 < 6; i++){
+        for (int i =0; i < 7; i++){
             displayHangman(i);
         }
 
@@ -35,9 +38,11 @@ public class HangMan {
                 return 4;
             case 5:
                 return 5;
-            case 6:
+            default:
                 return 6;
+
         }
+
 
     }
 
@@ -71,19 +76,19 @@ public class HangMan {
                 System.out.println("  +---------");
                 System.out.println("  0        |");
                 System.out.println("  |        |");
-                System.out.println(" / \\      |");
+                System.out.println(" / \\       |");
                 break;
             case 5:
                 System.out.println("  +---------");
-                System.out.println("\\ 0       |");
-                System.out.println("  |        |");
-                System.out.println(" / \\      |");
+                System.out.println("\\ 0 /       |");
+                System.out.println("  |         |");
+                System.out.println(" / \\        |");
                 break;
             case 6:
                 System.out.println("  +---------");
-                System.out.println("\\ 0 /     |");
+                System.out.println("\\ 0 /      |");
                 System.out.println("  |        |");
-                System.out.println(" / \\      |");
+                System.out.println(" / \\       |");
                 break;
 
 
