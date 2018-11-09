@@ -4,30 +4,42 @@ public class HangMan {
 
     public static void main(String[] largs) {
 
-        String guessedletters;
+        boolean guessedletters;
         int numberofwords;
         int numberofletters;
         int numberoftries;
         numberoftries = 6;
         numberofwords = 3;
         Scanner keyboard;
-        String guessedletter;
+        boolean guessedletter;
         keyboard = new Scanner(System.in);
-        boolean right;
-        right = false;
+        boolean word;
+        String guessedLetter;
 
 
 
         System.out.println("This is a Hang man game");
         System.out.println("Guess a letter I will tell you if it is wrong.");
-        guessedletter = keyboard.nextLine();
+        guessedLetter = keyboard.nextLine();
+        guessedLetter=guessedletter;
+
+        if (guessedletter = word){
+
+
+        }
 
 
 
 
-
-
-
+    }
+    public static int gameover (Scanner keyboard) {
+        for (int i = 0; i < 2; i++) {
+            gameover(i);
+        }
+        switch (keyboard.nextLine()){
+            default:
+                return 1;
+        }
     }
     public static int display (Scanner keyboard){
         for (int i =0; i < 7; i++){
@@ -100,6 +112,20 @@ public class HangMan {
 
         }
     }
+    public static void gameover(int gameOver){
+        switch (gameOver){
+            case 1:
+                System.out.println("  _____                         ____                 ");
+                System.out.println(" / ____|                       / __ \\                ");
+                System.out.println("| |  __  __ _ _ __ ___   ___  | |  | |_   _____ _ __ ");
+                System.out.println("| | |_ |/ _` | '_ ` _ \\ / _ \\ | |  | \\ \\ / / _ \\ '__|");
+                System.out.println("| |__| | (_| | | | | | |  __/ | |__| |\\ V /  __/ |   ");
+                System.out.println(" \\_____|\\__,_|_| |_| |_|\\___|  \\____/  \\_/ \\___|_|   ");
+
+
+        }
+    }
+
 
 
 }
