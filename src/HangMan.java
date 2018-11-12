@@ -21,21 +21,22 @@ public class HangMan {
         System.out.println("This is a Hang man game");
         System.out.println("Guess a letter I will tell you if it is wrong.");
         guessedLetter = keyboard.nextLine();
-        guessedLetter=guessedletter;
-
-        if (guessedletter = word){
 
 
+        for (int i = 0; i < 2; i++) {
+            gameover(i);
         }
+
+
+
+
 
 
 
 
     }
     public static int gameover (Scanner keyboard) {
-        for (int i = 0; i < 2; i++) {
-            gameover(i);
-        }
+
         switch (keyboard.nextLine()){
             default:
                 return 1;
