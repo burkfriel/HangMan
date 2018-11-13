@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7556e909-72f6-4a72-8c71-4c376cbaeedc" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/HangMan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HangMan.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -17,8 +18,8 @@
       <file leaf-file-name="HangMan.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/HangMan.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="537">
-              <caret line="114" column="5" lean-forward="true" selection-start-line="114" selection-start-column="5" selection-end-line="114" selection-end-column="5" />
+            <state relative-caret-position="442">
+              <caret line="32" column="43" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -42,7 +43,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="385" />
     <option name="width" value="988" />
     <option name="height" value="735" />
@@ -52,7 +53,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -69,12 +71,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Magic8Ball" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../NumberGuessingGame" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -160,7 +161,6 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.3296355" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
@@ -184,12 +184,20 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.3296355" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/HangMan.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1938">
+          <caret line="114" column="5" lean-forward="true" selection-start-line="114" selection-start-column="5" selection-end-line="114" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/HangMan.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -227,8 +235,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/HangMan.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="537">
-          <caret line="114" column="5" lean-forward="true" selection-start-line="114" selection-start-column="5" selection-end-line="114" selection-end-column="5" />
+        <state relative-caret-position="442">
+          <caret line="32" column="43" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
         </state>
       </provider>
     </entry>

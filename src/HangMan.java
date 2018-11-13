@@ -1,3 +1,5 @@
+
+
 import java.util.Scanner;
 
 public class HangMan {
@@ -11,10 +13,15 @@ public class HangMan {
         numberoftries = 6;
         numberofwords = 3;
         Scanner keyboard;
-        boolean guessedletter;
         keyboard = new Scanner(System.in);
-        boolean word;
+        int word;
         String guessedLetter;
+        int a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z;
+        a=1;
+        b=2;
+        c=3;
+
+
 
 
 
@@ -23,10 +30,9 @@ public class HangMan {
         guessedLetter = keyboard.nextLine();
 
 
-        for (int i = 0; i < 2; i++) {
-            gameover(i);
-        }
-
+      if( checkLetter(guessedLetter, "hello")){
+          System.out.println("Bazinga");
+      }
 
 
 
@@ -35,8 +41,19 @@ public class HangMan {
 
 
     }
-    public static int gameover (Scanner keyboard) {
 
+    public static boolean checkLetter(String letter, String secretWord){
+        if(secretWord.contains(letter)){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+    public static int gameover (Scanner keyboard) {
+        for (int i = 0; i < 2; i++) {
+            gameover(i);
+        }
         switch (keyboard.nextLine()){
             default:
                 return 1;
