@@ -6,20 +6,18 @@ public class HangMan {
 
     public static void main(String[] largs) {
 
-        boolean guessedletters;
-        int numberofwords;
-        int numberofletters;
+        String again;
         int numberoftries;
         numberoftries = 6;
-        numberofwords = 3;
         Scanner keyboard;
         keyboard = new Scanner(System.in);
-        int word;
         String guessedLetter;
-        int a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z;
-        a=1;
-        b=2;
-        c=3;
+        int playerscore;
+        int computerscore;
+        playerscore = 0;
+        computerscore = 0;
+
+
 
 
 
@@ -30,9 +28,19 @@ public class HangMan {
         guessedLetter = keyboard.nextLine();
 
 
-      if( checkLetter(guessedLetter, "hello")){
-          System.out.println("Bazinga");
-      }
+      do {
+          if (checkLetter(guessedLetter, "color")) {
+              System.out.println("That is right");
+          }
+          again = "";
+          System.out.println("Your score is "+playerscore+" my score is "+computerscore+".");
+          System.out.println("Would you like to play again yes or no.");
+          again = keyboard.next().toLowerCase();
+
+      }while (again.equals("yes"));
+        System.out.println("Your final score was "+playerscore+".");
+        System.out.println("My final score was "+computerscore+".");
+        System.out.println("Thank you for playing Hang Man.");
 
 
 
