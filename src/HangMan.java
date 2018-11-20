@@ -29,8 +29,11 @@ public class HangMan {
 
 
       do {
+
+          displayHangman(0);
           if (checkLetter(guessedLetter, "color")) {
               System.out.println("That is right");
+              playerscore+=1;
           }
           again = "";
           System.out.println("Your score is "+playerscore+" my score is "+computerscore+".");
