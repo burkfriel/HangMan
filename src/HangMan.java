@@ -28,13 +28,23 @@ public class HangMan {
         guessedLetter = keyboard.nextLine();
 
 
-      do {
+      do {//main game loop
 
-          displayHangman(0);
-          if (checkLetter(guessedLetter, "color")) {
-              System.out.println("That is right");
-              playerscore+=1;
-          }
+          //game core loop - game itself
+              displayHangman(0);
+              if (checkLetter(guessedLetter, "color")) {
+                  System.out.println("That is right");
+              } else {
+                  System.out.println("That is wrong.");
+                  displayHangman();
+              }
+
+
+
+
+
+
+
           again = "";
           System.out.println("Your score is "+playerscore+" my score is "+computerscore+".");
           System.out.println("Would you like to play again yes or no.");
