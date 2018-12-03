@@ -36,7 +36,7 @@ public class HangMan {
                   System.out.println("That is right");
               } else {
                   System.out.println("That is wrong.");
-                  displayHangman();
+                  /*displayHangman();*/
               }
 
 
@@ -60,6 +60,17 @@ public class HangMan {
 
 
 
+
+    }
+
+    public static String enterGuessIntoGuessPhrase(String word, String guess, String guessPhrase){
+        for(int position = 0; position<word.length(); position ++){
+            if(guess.charAt(0)==word.charAt(position)){
+                guessPhrase = guessPhrase.substring(0, position)+guess+
+                        guessPhrase.substring(position+1);
+            }
+        }
+        return guessPhrase;
 
     }
 
