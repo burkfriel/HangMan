@@ -6,7 +6,7 @@ public class HangMan {
 
     public static void main(String[] largs) {
 
-        String again;
+        boolean again;
         int numberoftries;
         numberoftries = 6;
         Scanner keyboard;
@@ -16,6 +16,12 @@ public class HangMan {
         int computerscore;
         playerscore = 0;
         computerscore = 0;
+        String againn;
+        String phrase;
+        int wrong;
+        String secretWord;
+        boolean guessedWord;
+        String Alphabet;
 
 
 
@@ -24,33 +30,59 @@ public class HangMan {
 
 
         System.out.println("This is a Hang man game");
-        System.out.println("Guess a letter I will tell you if it is wrong.");
-        guessedLetter = keyboard.nextLine();
+
 
 
       do {//main game loop
-
+            secretWord = "elephant";
+          phrase=createLines(secretWord);
+            wrong = 0;
+            again = false;
+            guessedWord=false;
+            Alphabet= "";
           //game core loop - game itself
-              displayHangman(0);
-              if (checkLetter(guessedLetter, "color")) {
+          while (wrong<numberoftries &&!guessedWord) {
+              System.out.println("Guess a letter I will tell you if it is wrong.");
+              System.out.println("HINT: It is animal");
+
+              System.out.println(phrase);
+              guessedLetter = keyboard.nextLine();
+
+              if (checkLetter(guessedLetter, secretWord)) {
                   System.out.println("That is right");
+                 phrase=enterGuessIntoGuessPhrase(secretWord, guessedLetter, phrase);
               } else {
                   System.out.println("That is wrong.");
-                  /*displayHangman();*/
+                  wrong++;
+
               }
 
 
+              if (secretWord.equals(phrase)){
+                  guessedWord=true;
+                  playerscore++;
+              }
+
+              displayHangman(wrong);
+              Alphabet=Alphabet+guessedLetter;
+              System.out.println(Alphabet);
 
 
 
 
 
-          again = "";
+          }
+          gameover(1);
+
+
+
+          againn = "";
           System.out.println("Your score is "+playerscore+" my score is "+computerscore+".");
           System.out.println("Would you like to play again yes or no.");
-          again = keyboard.next().toLowerCase();
+          againn = keyboard.next().toLowerCase();
+          keyboard.nextLine();
 
-      }while (again.equals("yes"));
+      }while (againn.equals("yes"));
         System.out.println("Your final score was "+playerscore+".");
         System.out.println("My final score was "+computerscore+".");
         System.out.println("Thank you for playing Hang Man.");
@@ -61,6 +93,13 @@ public class HangMan {
 
 
 
+    }
+    public static String createLines(String word){
+        String dashedLines="";
+        for(int i=0;i<word.length();i++){
+            dashedLines=dashedLines+"-";
+        }
+        return dashedLines;
     }
 
     public static String enterGuessIntoGuessPhrase(String word, String guess, String guessPhrase){
@@ -148,7 +187,7 @@ public class HangMan {
                 break;
             case 5:
                 System.out.println("  +---------");
-                System.out.println("\\ 0 /       |");
+                System.out.println("\\ 0         |");
                 System.out.println("  |         |");
                 System.out.println(" / \\        |");
                 break;
